@@ -57,10 +57,9 @@ nav {
 	width:15%;
 	float:left;
 	border:none;
-	height:100%;
 }
 nav ul {
-	padding-left:30px;
+	padding-left:16px;
 	margin:-7px;	
 }
 nav li {
