@@ -63,7 +63,7 @@ jQuery(function($){
 		<input id="phone" class="txt" name="phone" type="phone" placeholder="Ваш телефон"> 
 		<input id="email" class="txt" name="email" type="email" placeholder="Ваш e-mail"> 
 		<textarea id="msg" class="txtarea" name="msg" placeholder="Ваше сообщение:"></textarea>
-		<button id="send">Отправить</button>
+		<button id="send" action="sendmessage.php">Отправить</button>
 	</form>
 </div>
 <script type="text/javascript">
@@ -127,12 +127,6 @@ jQuery(function($){
       }
     });
   });
-</script>
-		<script type="text/javascript">
-jQuery(function($){
-   $("#phone").mask("+7 (999) 999-9999");
-   $("#phone2").mask("+7 (999) 999-9999");
-});
 </script>
 	<footer>
 		<p>Все права защищены &copy; 2017</p>
