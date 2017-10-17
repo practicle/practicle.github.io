@@ -207,6 +207,10 @@ input.error:focus, textarea.error:focus {
 	border-bottom:1px dashed black;
 	border-top:1px dashed black;
 }
+.column a{
+	text-decoration:none;
+	color:blue;
+}
 .column p{
 	font-size:15px;
 	font-family:Arimo, sans-serif;
@@ -230,7 +234,6 @@ input.error:focus, textarea.error:focus {
 
 }
 
-}
 .column1 h3{
 	font-size: 1.5em;
 	margin-top: 10px;
@@ -260,6 +263,24 @@ footer {
 	background-color: black;
 	color: rgb(204,204,204);
 	clear: both;  
+}
+#send1 { 
+    color: #FFFFFF;
+    display: block;
+    cursor: pointer;
+    font-size: 1.2em;
+    border: solid 1px #F9F9F9;
+    border-radius: 2px;
+   background: linear-gradient(to bottom, rgb(93,43,78), rgb(8,2,50));
+    width: 155px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#send1:hover {
+    background: linear-gradient(to bottom, #444, #949394 );
+}
+#send1 a{
+	color:white;
 }
 @media (max-width:1200px) and (max-width:800px){
 
