@@ -49,7 +49,7 @@ header {
 	background-color:rgb(93,43,78); 
 	background-image: linear-gradient(to left, rgb(93,43,78), rgb(8,2,50));
 	padding-bottom: 10px;
-	width:85%;
+	width:81%;
 	float:right;
 }
 header p{
@@ -60,7 +60,7 @@ header p{
 nav {
 	background: linear-gradient(to right, rgb(93,43,78), rgb(8,2,50))no-repeat;
 	background-position:fixed;
-	width:15%;
+	width:19%;
 	float:left;
 	border:none;
 	padding-bottom:75%;
@@ -212,6 +212,7 @@ input.error:focus, textarea.error:focus {
 	float:left;
 	width:15%;
 	border-right:1px dashed black;
+	height:50%;
 }
 .column{
 	padding-top:5px;
@@ -294,5 +295,139 @@ footer {
 #send1 a{
 	color:white;
 }
-@media (min-width:1000px) and (max-width:800px){
+@media (min-width:1100px) and (max-width: 1200px){
+nav {
+	padding-bottom:100%;
+	}
+	#news{
+		width:16%;
+	}
+	.news2 img{
+	width:400px;
+	}
+	.column1 img{
+		width:400px;
+		margin-left:20px;
+		margin-top:15px;
+		margin-right:15px;
+	}
+.column1 li{
+	text-align:left;
+	padding-left:20px;
+	}
+}
+@media (min-width:1024px) and (max-width: 1100px){
+	nav{
+		padding-bottom:82%;
+	}
+	#news{
+		width:17%;
+	}
+	.column1{
+	}
+	.news1{
+		width:67%;
+	}
+	.news1 p{
+		text-indent:10px;
+		font-size:15px;
+	}
+	.news2{
+		width: 67%;
+	}
+	.news2 img{
+		width:300px;
+	}
+	.news2 h2{
+		font-size:17px;
+	}
+	.news2 p{
+		text-indent:10px;
+		font-size:15px;
+	}
+	.news2 ol{
+		font-size:15px;
+	}
+	.news2 li{
+		font-size:15px;
+	}
+		.column1 img{
+		width:250px;
+	}
+.column1 li{
+	text-align:left;
+	padding-left:20px;
+	font-size:15px;
+	}
+	.column1 p{
+		font-size:15px;
+	}
+}
+@media (min-width:768px) and (max-width: 1024px){
+	nav{
+		padding-bottom:125%;
+	}
+	.news1{
+		width:63%;
+	}
+	.news1 p{
+		font-size:14px;
+	}
+	.news2{
+		width:63%;
+	}
+	.news2 img{
+		width:250px;
+		margin-left:7px;
+		margin-right:8px;
+	}
+	.news2 h2{
+		font-size: 16px;
+	}
+	.news2 p{
+		font-size: 14px;
+	}
+	.news2 ul,ol{
+		font-size:14px;
+	}
+	#news{
+		width:18%;
+	}
+	#news h2{
+		font-size:15px;
+	}
+	#news h3{
+		font-size:13px;
+		text-align:center;
+	}
+	#send1{
+		width:90%;
+		height:30px;
+		margin-left:5px;
+	}
+	#send1 a{
+		font-size:12px;
+	}
+	.column p{
+		font-size:12px;
+		text-align:center;
+	}
+	.column1 img{
+		width:225px;
+		margin-left:10px;
+	}
+	.column1 p{
+		font-size:14px;
+	}
+	.column1 h3{
+		font-size:15px;
+	}
+	.column1 ol,li{
+		font-size:14px;
+		float:center;
+	}
+	header p{
+		text-align:left;
+		font-size:13px;
+	}
 }

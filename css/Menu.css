@@ -41,7 +41,7 @@ span{
 .mobile-tab ul{
 	padding:5% 0;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 600px){
 	.mobile-tab,#burg,#mobile{
 		display:none;
 	}
