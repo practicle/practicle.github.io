@@ -276,7 +276,7 @@ footer {
     margin-top:10px;
     margin-bottom:10px;
 }
-#send1:hover {
+#send1:hover{
     background: linear-gradient(to bottom, #444, #949394 );
 }
 #send1 a{
