@@ -1,0 +1,138 @@
+<!Doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/Menu.css">
+		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+		<title>TrendPhone</title>
+		 <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+ <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+ <script type="text/javascript">
+jQuery(function($){
+   $("#phone").mask("+7 (999) 999-9999");
+   $("#phone2").mask("+7 (999) 999-9999");
+});
+</script>
+	</head>
+	<!--Шапка-->
+	<body>
+		<div class="pageWrapper">
+			<header>
+				<p><img src="img/logo.png" alt="Логотип компании">
+				Контакты:<a href="mailto:romans0021@mail.ru">(romans0021@mail.ru)</a>-Разработчик сайта</p>
+			</header>
+			<div class="contentWrapper">
+			<!--Боковое меню-->
+			<aside class="sidebar">
+				<nav class="clear">
+				<nav  id="menu">
+					<ul>
+						<li><a href="index.html"><strong>Главная</strong></a></li>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="Feedback.html">Обратная связь</a></li>
+						<li><a href="company.html">Сведения о компании</a></li>
+					</ul>
+				</nav>
+			</nav>
+			</aside>
+			<div id="burg">
+				<a href="#">
+					<span class="bar" id="top"></span>
+					<span class="bar" id="middle"></span>
+					<span class="bar" id="bottom"></span>
+				</a>
+	 		 </div>
+	  
+	  <div class="mobile-tab">
+	  	<nav class="clear">
+		<nav id="mobile">
+			<ul>
+				<li><a href="index.html" class="button button-primary"><strong>Главная</strong></a></li>
+				<li><a href="news.html" class="button">Новости</a></li>
+				<li><a href="Feedback.html" class="button">Обратная связь</a></li>
+				<li><a href="company.html" class="button">Сведения о компании</a></li>
+			</ul>
+		</nav>
+		</nav>
+      </div>
+	<div id="inline">
+		<h2>Онлайн заявка</h2>
+		<form id="contact" action="sendmessage.php" method="post" name="contact">
+		<input id="name" class="txt" name="name" type="name" placeholder="Ваше имя">
+		<input id="phone" class="txt" name="phone" type="phone" placeholder="Ваш телефон"> 
+		<input id="email" class="txt" name="email" type="email" placeholder="Ваш e-mail"> 
+		<textarea id="msg" class="txtarea" name="msg" placeholder="Ваше сообщение:"></textarea>
+		<button id="send" action="sendmessage.php">Отправить</button>
+	</form>
+</div>
+<script type="text/javascript">
+  function validateEmail(email) { 
+    var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return reg.test(email);
+  }
+
+  $(document).ready(function() {
+    $("#contact").submit(function() { return false; });
+    $("#send").on("click", function(){
+      var emailval  = $("#email").val();
+      var namevl  = $("#name").val();
+      var phonevl  = $("#phone").val();
+      var msgval    = $("#msg").val();
+      var msglen    = msgval.length;
+      var mailvalid = validateEmail(emailval);
+
+      if(mailvalid == false) {
+        $("#email").addClass("error");
+      }
+      else if(mailvalid == true){
+        $("#email").removeClass("error");
+      }
+  if(mailvalid == false) {
+        $("#name").addClass("error");
+      }
+      else if(mailvalid == true){
+        $("#name").removeClass("error");
+      }
+      if(mailvalid == false) {
+        $("#phone").addClass("error");
+      }
+      else if(mailvalid == true){
+        $("#phone").removeClass("error");
+      }
+      if(msglen < 4) {
+        $("#msg").addClass("error");
+      }
+      else if(msglen >= 4){
+        $("#msg").removeClass("error");
+      }
+      
+      if(mailvalid == true && msglen >= 4) {
+        // если обе проверки пройдены
+        // сначала мы скрываем кнопку отправки
+        $("#send").replaceWith("<em>отправка...</em>");
+        $.ajax({
+          type: 'POST',
+          url: 'sendmessage.php',
+          data: $("#contact").serialize(),
+          success: function(data) {
+            if(data == "true") {
+              $("#contact").fadeOut("fast", function(){
+                $(this).before("<p><strong>Успешно! Ваше сообщение отправлено  :)</strong></p>");
+                setTimeout("$.fancybox.close()", 1000);
+              });
+            }
+          }
+        });
+      }
+    });
+  });
+</script>
+	<footer>
+		<p>Все права защищены &copy; 2017</p>
+	</footer>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 	<script src="script.js"></script> 
+	</div>
+	</body>
+</html>
