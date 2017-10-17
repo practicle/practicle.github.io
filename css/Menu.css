@@ -41,7 +41,7 @@ span{
 .mobile-tab ul{
 	padding:5% 0;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1000px){
 	.mobile-tab,#burg,#mobile{
 		display:none;
 	}
@@ -82,11 +82,8 @@ span{
 	}
 }
 #menu{
-    padding: 0px;
+	padding:0;
 	margin:90px 0 26px 0px;
-    position: relative;
-    height:1157px;
-    padding-top:180px;
 }
 #menu li{
     display: block;

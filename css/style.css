@@ -47,7 +47,6 @@ header {
 }
 header p{
 	color:white;
-	color: white;
 	font-weight: bold;
 	clear: both;
 }
@@ -57,6 +56,7 @@ nav {
 	width:15%;
 	float:left;
 	border:none;
+	padding-bottom:100%;
 }
 nav ul {
 	padding-left:16px;
@@ -79,8 +79,8 @@ aside p, aside li {
 }
 /*Контент*/
 .news1{
-	float: left;
-	width: 85%;
+	float: right;
+	width: 69%;
 }
 .news1 p{
 	line-height:1.5em;
@@ -91,8 +91,7 @@ aside p, aside li {
 }
 .news2{
 	float: right;
-	width: 84%;
-	padding: 0 20px;
+	width: 67%;
 }
 .news2 p{
 	line-height:1.5em;
@@ -100,6 +99,7 @@ aside p, aside li {
 	padding-bottom:15px;
 	text-align:justify;
 	text-indent:1.5em;
+	padding-right:12px;
 }
 .news2 h2{
 	font-size: 1.5em;
@@ -195,6 +195,65 @@ input.error:focus, textarea.error:focus {
     background: linear-gradient(to bottom, #444, #949394 );
 }
 /* Форма обратной связи */
+/*колонка новостей*/
+#news{
+	float:left;
+	width:15%;
+	border-right:1px dashed black;
+}
+.column{
+	padding-top:5px;
+	padding-left:2px;
+	border-bottom:1px dashed black;
+	border-top:1px dashed black;
+}
+.column p{
+	font-size:15px;
+	font-family:Arimo, sans-serif;
+	padding-top:5px;
+	letter-spacing:0.1px;
+	line-height:1.1em;
+	text-indent:1em;
+}
+.column1{
+	padding-left:10px;
+	border:2px dashed black;
+}
+.column1 p{
+	line-height:1.5em;
+	padding-top:10px;
+	padding-bottom:15px;
+	text-align:justify;
+	text-indent:1.5em;
+	padding-right:12px;
+	padding-left:12px;
+
+}
+
+}
+.column1 h3{
+	font-size: 1.5em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align:center;
+}
+.news2 h3{
+	text-align:center;
+}
+.column1 ol{
+	text-align:left;
+	line-height:1.5em;
+	float:center;
+}
+.column1 li{
+	line-height:1.5em;
+	letter-spacing: 1px;
+	text-align:left;
+}
+.column1 img{
+	float:left;
+	margin: 7px 7px 7px 0;
+}
 footer {
 	font-size: .8em;	
 	padding: 10px 10px 30px 10px;
