@@ -282,6 +282,5 @@ footer {
 #send1 a{
 	color:white;
 }
-@media (max-width:1200px) and (max-width:800px){
-
+@media (min-width:1000px) and (max-width:800px){
 }
