@@ -67,7 +67,7 @@ nav {
 }
 nav ul {
 	padding-left:16px;
-	margin:-7px;	
+	margin:-7px;
 }
 nav li {
 	float: center;
@@ -76,7 +76,7 @@ nav li {
 	list-style: none;	
 }
 nav a{
-	font-size:1em;
+	font-size:1.3em;
 	width:100%;
 	padding-top:10px;
 }
@@ -204,11 +204,13 @@ input.error:focus, textarea.error:focus {
    background: linear-gradient(to bottom, rgb(93,43,78), rgb(8,2,50));
     width: 210px;
     margin-bottom: 20px;
+    margin-left:20px;
 }
 #send:hover {
     background: linear-gradient(to bottom, #444, #949394 );
 }
 /* Форма обратной связи */
+
 /*колонка новостей*/
 #news{
 	float:left;
@@ -227,12 +229,21 @@ input.error:focus, textarea.error:focus {
 	color:blue;
 }
 .column p{
-	font-size:15px;
+	font-size:18px;
 	font-family:Arimo, sans-serif;
 	padding-top:5px;
 	letter-spacing:0.1px;
 	line-height:1.1em;
 	text-indent:1em;
+	text-align:center;
+}
+#news h2{
+	text-align:center;
+	font-size:20px;
+}
+.column h3{
+	text-align:center;
+	font-size:19px;
 }
 .column1{
 	padding-left:10px;
@@ -246,14 +257,13 @@ input.error:focus, textarea.error:focus {
 	text-indent:1.5em;
 	padding-right:12px;
 	padding-left:12px;
-
 }
 
 .column1 h3{
 	font-size: 1.5em;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	text-align:center;
+	text-align:left;
 }
 .news2 h3{
 	text-align:center;
@@ -262,17 +272,20 @@ input.error:focus, textarea.error:focus {
 	text-align:left;
 	line-height:1.5em;
 	float:center;
+	padding-left:10px;
+	list-style:none;
 }
 .column1 li{
 	line-height:1.5em;
 	letter-spacing: 1px;
 	text-align:left;
+	padding-left:10px;
 }
 .column1 img{
 	float:left;
-	margin: 0px 7px 7px 0;
+	margin: 0px 10px 10px 0;
 	margin-left:5px;
-	width:450px;
+	width:390px;
 }
 footer {
 	font-size: .8em;	
@@ -292,6 +305,7 @@ footer {
     width: 155px;
     margin-top:10px;
     margin-bottom:10px;
+    margin-left:20px;
 }
 #send1:hover{
     background: linear-gradient(to bottom, #444, #949394 );
@@ -368,6 +382,7 @@ nav {
 	}
 }
 @media (min-width:768px) and (max-width: 1024px){
+	#send, .txt, input .txt, textarea{margin-left:20px;}
 	nav{
 		padding-bottom:125%;
 	}
