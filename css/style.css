@@ -313,45 +313,39 @@ footer {
 #send1 a{
 	color:white;
 }
-@media (min-width:1100px) and (max-width: 1200px){
-nav {
-	padding-bottom:100%;
-	}
-	#news{
-		width:16%;
-	}
-	.news2 img{
-	width:400px;
-	}
-	.column1 img{
-		width:400px;
-		margin-left:20px;
-		margin-top:15px;
-		margin-right:15px;
-	}
-.column1 li{
-	text-align:left;
-	padding-left:20px;
-	}
-}
 @media (min-width:1024px) and (max-width: 1100px){
 	nav{
-		padding-bottom:82%;
+		padding-bottom:95%;
 	}
 	#news{
-		width:17%;
+		width:14%;
 	}
-	.column1{
+	#news h2{
+		font-size:17px;
+		text-align:center;
+	}
+	.column h3{
+		font-size: 16px;
+	}
+	.column p{
+		font-size:14px;
+	}
+	#send1{
+		width:130px;
+		margin-left:5px;
+	}
+	#send1 a{
+		font-size:15px;
 	}
 	.news1{
-		width:67%;
+		width:64%;
 	}
 	.news1 p{
 		text-indent:10px;
 		font-size:15px;
 	}
 	.news2{
-		width: 67%;
+		width: 64%;
 	}
 	.news2 img{
 		width:300px;
@@ -369,7 +363,7 @@ nav {
 	.news2 li{
 		font-size:15px;
 	}
-		.column1 img{
+	.column1 img{
 		width:250px;
 	}
 .column1 li{
