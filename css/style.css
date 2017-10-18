@@ -82,7 +82,7 @@ nav a{
 }
 aside p, aside li {
 	font-size:1em;
-	margin-top: 10px;	
+	margin-top: 10px;
 }
 /*Контент*/
 .news1{
@@ -302,10 +302,10 @@ footer {
     border: solid 1px #F9F9F9;
     border-radius: 2px;
    background: linear-gradient(to bottom, rgb(93,43,78), rgb(8,2,50));
-    width: 155px;
+    width: 165px;
     margin-top:10px;
     margin-bottom:10px;
-    margin-left:20px;
+    margin-left:15px;
 }
 #send1:hover{
     background: linear-gradient(to bottom, #444, #949394 );

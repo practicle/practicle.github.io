@@ -26,8 +26,10 @@ jQuery(function($){
 			<!--Боковое меню-->
 			<aside class="sidebar">
 				<nav class="clear">
-				<nav  id="menu">
-					<ul>
+				<nav  class="topmenu">
+					<ul id="menu">
+						<div class="iconMenu"><img src="img/iconmenu.png" alt="Иконка меню"/></div>
+						<div class="itemsMenu">
 						<li><a href="index.html"><strong>Главная</strong></a></li>
 						<li><a href="news.html">Новости</a></li>
 						<li><a href="Feedback.html">Обратная связь</a></li>
@@ -36,26 +38,6 @@ jQuery(function($){
 				</nav>
 			</nav>
 			</aside>
-			<div id="burg">
-				<a href="#">
-					<span class="bar" id="top"></span>
-					<span class="bar" id="middle"></span>
-					<span class="bar" id="bottom"></span>
-				</a>
-	 		 </div>
-	  
-	  <div class="mobile-tab">
-	  	<nav class="clear">
-		<nav id="mobile">
-			<ul>
-				<li><a href="index.html" class="button button-primary"><strong>Главная</strong></a></li>
-				<li><a href="news.html" class="button">Новости</a></li>
-				<li><a href="Feedback.html" class="button">Обратная связь</a></li>
-				<li><a href="company.html" class="button">Сведения о компании</a></li>
-			</ul>
-		</nav>
-		</nav>
-      </div>
 	<div id="inline">
 		<h2>Онлайн заявка</h2>
 		<form id="contact" action="sendmessage.php" method="post" name="contact">
@@ -131,8 +113,10 @@ jQuery(function($){
 	<footer>
 		<p>Все права защищены &copy; 2017</p>
 	</footer>
-		 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	 	<script src="script.js"></script> 
+	 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/script.js"></script> 
 	</div>
 	</body>
 </html>
