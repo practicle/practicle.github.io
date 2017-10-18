@@ -369,7 +369,7 @@ nav {
 }
 @media (min-width:768px) and (max-width: 1024px){
 	nav{
-		padding-bottom:140%;
+		padding-bottom:160%;
 	}
 	.news1{
 		width:63%;
