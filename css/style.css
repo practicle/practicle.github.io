@@ -17,7 +17,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	display: block;
 }
 html {
-     background: url(http://www.2fons.ru/pic/201407/2560x1600/2fons.ru-53050.jpg) no-repeat center center fixed;
+     background: url(http://desktopwallpapers.org.ua/pic/201110/1920x1200/desktopwallpapers.org.ua-6272.jpg) no-repeat center center fixed;
        -webkit-background-size: cover;
        -moz-background-size: cover;
        -o-background-size: cover;
@@ -139,7 +139,7 @@ margin-left: 30px;
     margin: 0 auto;
     background: #fff;
     padding: 10px 20px;
-     background: url(http://www.2fons.ru/pic/201407/2560x1600/2fons.ru-53050.jpg) no-repeat center center fixed;
+     background: url(http://desktopwallpapers.org.ua/pic/201110/1920x1200/desktopwallpapers.org.ua-6272.jpg) no-repeat center center fixed;
        -webkit-background-size: cover;
        -moz-background-size: cover;
        -o-background-size: cover;
@@ -369,7 +369,7 @@ nav {
 }
 @media (min-width:768px) and (max-width: 1024px){
 	nav{
-		padding-bottom:160%;
+		padding-bottom:125%;
 	}
 	.news1{
 		width:63%;
